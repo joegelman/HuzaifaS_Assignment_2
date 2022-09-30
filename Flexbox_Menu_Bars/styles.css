@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Rubik';
+    background-color: #DAE1EB;
+}
+
+ul {
+    list-style: none;
+    padding: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex;
+    text-align: right;
+    width: auto;
+    
+}
+
+li {
+    margin: 0 2.5vw 0 0;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #25242A;
+    color: white;
+    padding: 20px 10vw;
+    margin: 3vw 0;
+    box-shadow: 5px 5px 20px #778089;
+}
+
+.logo-item {
+    font-weight: bold;
+    font-size: larger;
+    letter-spacing: .1rem;
+}
+
+button {
+    font-size: 1em;
+    padding: 0.5em 1.75em;
+    border-radius: 1em;
+    outline: none;
+    border: none;
+    background-color: #4E83A3;
+    color: white;
+}
+
+/* Animation Experiments */
+
+button:hover {
+    box-shadow: 0px 0px 12px #21e1ff;
+    outline: 1px rgb(54, 188, 255) solid;
+    text-shadow: 0px 1px 1px #25242A;
+}
+
+/* Specification Styles */
+
+/* 1 */
+
+.container.one {
+    
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+/* 2 */
+
+.container.two {
+    justify-content: flex-start;
+}
+
+.logo-item.two {
+    order: 2;
+    margin-left: auto;
+}
+
+/* .item-container.two > li {
+    margin: 0 5vw 0 0;
+} */
+
+
+
+/* 3 */
+
+.container.three {
+    justify-content: flex-end;
+    
+}
+.logo-item.three {
+    margin-right: auto;
+}
+
