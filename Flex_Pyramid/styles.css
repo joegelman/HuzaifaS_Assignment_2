@@ -1,0 +1,61 @@
+/* CSS Reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* Meta-Flex */
+
+  .meta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 400px;
+    max-width: 80%;
+    margin: 100px auto;
+    /* border: 10px solid salmon;  */
+  }
+
+  .item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1%;
+    flex-shrink: initial;
+  }
+
+  .item-container > div {
+    background-color: #D1D4DC;
+    width: 100%;
+    padding: 1em;
+    margin: .5% 0;
+    text-align: center;
+    min-height: 3em;
+  }
