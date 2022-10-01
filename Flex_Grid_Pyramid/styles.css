@@ -1,0 +1,183 @@
+/* CSS Reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    font-family:'Menlo', 'Courier-New';
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* Grid */
+
+.container {
+    display: grid;
+    max-width: 80vw;
+    margin: 100px auto;
+    grid-template-areas: 
+    "full full full full full full full full full full full full"
+    "half1 half1 half1 half1 half1 half1 half2 half2 half2 half2 half2 half2"
+    "one-third1 one-third1 one-third1 one-third1 one-third2 one-third2 one-third2 one-third2 one-third3 one-third3 one-third3 one-third3"
+    "one-fourth1 one-fourth1 one-fourth1 one-fourth2 one-fourth2 one-fourth2 one-fourth3 one-fourth3 one-fourth3 one-fourth4 one-fourth4 one-fourth4"
+    "one-sixth1 one-sixth1 one-sixth2 one-sixth2 one-sixth3 one-sixth3 one-sixth4 one-sixth4 one-sixth5 one-sixth5 one-sixth6 one-sixth6"
+    "a1 a2 a3 a4 a5 a6 a7 a8 a9 a10 a11 a12"
+    ;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.container > div {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #D1D4DC;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Grid Items */
+
+.full {
+    grid-area: full;
+}
+
+.half1 {
+    grid-area: half1;
+}
+
+.half2 {
+    grid-area: half2;
+}
+
+.half3 {
+    grid-area: half3;
+}
+
+.one-third1 {
+    grid-area: one-third1;
+}
+
+.one-third2 {
+    grid-area: one-third2;
+}
+
+.one-third3 {
+    grid-area: one-third3;
+}
+
+.one-fourth1 {
+    grid-area: one-fourth1;
+}
+
+.one-fourth2 {
+    grid-area: one-fourth2;
+}
+
+.one-fourth3 {
+    grid-area: one-fourth3;
+}
+
+.one-fourth4 {
+    grid-area: one-fourth4;
+}
+
+.one-sixth1 {
+    grid-area: one-sixth1;
+}
+
+.one-sixth2 {
+    grid-area: one-sixth2;
+}
+
+.one-sixth3 {
+    grid-area: one-sixth3;
+}
+
+.one-sixth4 {
+    grid-area: one-sixth4;
+}
+
+.one-sixth5 {
+    grid-area: one-sixth5;
+}
+
+.one-sixth6 {
+    grid-area: one-sixth6;
+}
+
+.one-twelfth {
+    height: 3.5em;
+}
+
+.a1 {
+    grid-area: a1;
+}
+
+.a2 {
+    grid-area: a2;
+}
+
+.a3 {
+    grid-area: a3;
+}
+
+.a4 {
+    grid-area: a4;
+}
+
+.a5 {
+    grid-area: a5;
+}
+
+.a6 {
+    grid-area: a6;
+}
+
+.a7 {
+    grid-area: a7;
+}
+
+.a8 {
+    grid-area: a8;
+}
+
+.a9 {
+    grid-area: a9;
+}
+
+.a10 {
+    grid-area: a10;
+}
+
+.a11 {
+    grid-area: a11;
+}
+
+.a12 {
+    grid-area: a12;
+}
+
+
+
